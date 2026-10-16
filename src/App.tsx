@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import DashboardLayout from "./DashboardLayout";
 import DashBoard from "./Screens/DashBoard";
+import Users from "./Screens/Users";
+import GeminiUsage from "./Screens/GeminiUsage";
 // import Login from "./Screens/Login"; // Example future page
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             {/* Add future sidebar pages here */}
             {/* <Route path="/profile" element={<Profile />} /> */}
             {/* <Route path="/plans" element={<Plans />} /> */}
+            <Route path="/profile" element={<Users />} />
+            <Route path="/gemini-usage" element={<GeminiUsage />} />
           </Route>
 
         </Routes>
