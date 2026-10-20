@@ -6,7 +6,7 @@ import DashBoard from "./Screens/DashBoard";
 import Users from "./Screens/Users";
 import GeminiUsage from "./Screens/GeminiUsage";
 // import Login from "./Screens/Login"; // Example future page
-
+import Plans from "./Screens/Plans"; 
 function App() {
   return (
     <React.StrictMode>
@@ -18,7 +18,7 @@ function App() {
             <Route path="/" element={<DashBoard />} />
             {/* Add future sidebar pages here */}
             {/* <Route path="/profile" element={<Profile />} /> */}
-            {/* <Route path="/plans" element={<Plans />} /> */}
+            <Route path="/plans" element={<Plans />} />
             <Route path="/profile" element={<Users />} />
             <Route path="/gemini-usage" element={<GeminiUsage />} />
           </Route>
